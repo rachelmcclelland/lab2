@@ -15,6 +15,15 @@ function listAllTasks()
     {
         console.log(str[i])
     }
+
+    /*for (let item of str)
+    {
+        console.log(item)
+    }
+
+    str.forEach(function(task){
+        console.log()
+    })*/
 }
 
 function deleteTask(task : string) : number
@@ -27,8 +36,11 @@ function deleteTask(task : string) : number
             index = i;
         }
     }*/
-    str.splice(index, 1);
-
+    if (index > -1)
+    {
+        str.splice(index, 1);
+    }
+    
     console.log(task + " has been removed from the array")
     return (str.length);
 }

@@ -10,6 +10,14 @@ function listAllTasks() {
     for (var i = 0; i < str.length; i++) {
         console.log(str[i]);
     }
+    /*for (let item of str)
+    {
+        console.log(item)
+    }
+
+    str.forEach(function(task){
+        console.log()
+    })*/
 }
 function deleteTask(task) {
     var index = str.indexOf(task);
